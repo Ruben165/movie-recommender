@@ -1,0 +1,30 @@
+#titleScreen{
+	-fx-padding: 80 0 80 40;
+}
+
+#resultScreen{
+	-fx-padding: 30 0 30 40;
+}
+
+#recommendButton{
+	-fx-text-fill: "#333185";
+	-fx-background-color: "#F4EB78";
+	-fx-border-radius: 5;
+	-fx-padding: 12 18;
+}
+
+#againButton{
+	-fx-text-fill: "#333185";
+	-fx-background-color: "#F4EB78";
+	-fx-border-radius: 5;
+	-fx-cursor: pointer;
+	-fx-padding: 12 18;
+}
+
+#backButton{
+	-fx-text-fill: "#7AA9ED";
+	-fx-background-color: "#333185";
+	-fx-border-radius: 5;
+	-fx-border-color: "#7AA9ED" ;
+	-fx-padding: 6 9;
+}
