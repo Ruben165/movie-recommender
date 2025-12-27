@@ -1,30 +1,76 @@
-#titleScreen{
-	-fx-padding: 80 0 80 40;
+#titleScreen {
+	-fx-padding: 0 0 0 2em;
 }
 
-#resultScreen{
-	-fx-padding: 30 0 30 40;
+#resultScreen {
+	-fx-padding: 0 0 0 4.1em;
 }
 
-#recommendButton{
-	-fx-text-fill: "#333185";
-	-fx-background-color: "#F4EB78";
-	-fx-border-radius: 5;
+#recommendButton {
+	-fx-text-fill: #333185;
+	-fx-background-color: #F4EB78;
+	-fx-background-radius: 5;
 	-fx-padding: 12 18;
 }
 
-#againButton{
-	-fx-text-fill: "#333185";
-	-fx-background-color: "#F4EB78";
-	-fx-border-radius: 5;
-	-fx-cursor: pointer;
-	-fx-padding: 12 18;
+#recommendButton:hover {
+	-fx-background-color: #e6dd60;
+	-fx-scale-x: 1.05;
+	-fx-scale-y: 1.05;
+	-fx-cursor: hand;
 }
 
-#backButton{
-	-fx-text-fill: "#7AA9ED";
-	-fx-background-color: "#333185";
+#recommendButton:pressed {
+	-fx-background-color: #d4c94e;
+	-fx-scale-x: 0.98;
+	-fx-scale-y: 0.98;
+}
+
+#againButton,
+#backButton {
 	-fx-border-radius: 5;
-	-fx-border-color: "#7AA9ED" ;
-	-fx-padding: 6 9;
+	-fx-padding: 12 18;
+	-fx-cursor: hand;
+	-fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 4, 0, 0, 2);
+	-fx-transition: -fx-background-color 0.2s ease, -fx-scale-x 0.1s, -fx-scale-y 0.1s;
+}
+
+#againButton {
+	-fx-text-fill: #333185;
+	-fx-background-color: #F4EB78;
+}
+
+#againButton:hover {
+	-fx-background-color: #f0e050;
+	-fx-scale-x: 1.05;
+	-fx-scale-y: 1.05;
+}
+
+#againButton:pressed {
+	-fx-scale-x: 0.98;
+	-fx-scale-y: 0.98;
+}
+
+#backButton {
+	-fx-text-fill: #7AA9ED;
+	-fx-background-color: #333185;
+	-fx-border-color: #7AA9ED;
+	-fx-border-width: 2;
+	-fx-border-style: solid;
+	-fx-padding: 10 22;
+}
+
+#backButton:hover {
+	-fx-background-color: #4446a0;
+	-fx-scale-x: 1.05;
+	-fx-scale-y: 1.05;
+}
+
+#backButton:pressed {
+	-fx-scale-x: 0.98;
+	-fx-scale-y: 0.98;
+}
+
+.progress-indicator {
+	-fx-progress-color: black;
 }
